@@ -59,3 +59,90 @@ print(d)
 
 data = {"stu1": {"name": "Maui"}, "stu2": {"name": "Arya"}}
 print(data["stu2"]["name"])
+
+
+# #Write a Python program that asks the user to input numbers in a loop. If a number is a multiple of 7, print "Found a multiple of 7!" and break the loop. Otherwise, continue asking for numbers.
+# num = int(input("enter a number : "))
+# while num >= 0:
+#     if num // 7 == 0:
+#         break
+#     print("Found a multiple of 7!")
+#     if num // 7 != 0:
+#         continue
+
+
+# while True:
+#     word = input("enter a word")
+#     if word == "stop":
+#         break
+#     print(word)
+
+i = 0
+while i <= 5:
+    print(i)
+    i += 1
+
+a = 0
+while a <= 5:
+    print(a*a)
+    a +=1
+
+i = 1
+total = 0
+
+while i <= 5:
+    total += i
+    i += 1
+
+print("Sum =", total)
+
+
+i = 1
+sum = 0
+while i <= 5:
+    sum +=i
+    i +=1
+print(sum)
+
+
+i = 5
+while i>=1:
+    print(i)
+    i -= 1
+
+i = 0
+while i<=10:
+    if i % 2==0:
+        print(i)
+    i += 1
+
+
+i = 1
+factorial = 1
+while i <= 5:
+    factorial = factorial * i
+    i +=1
+print(factorial)
+
+
+
+sum = 0
+while True:
+    num = int(input("enter a number: "))
+    
+    if num == 0:
+        break
+    sum += num
+print(sum)
+
+attempt = 0
+while attempt <3:
+    password = input("enter password: ")
+    if password == "open123":
+        print("access granted")
+        break
+    else:
+        print("wrong password")
+        attempt +=1
+    if attempt == 3:
+        print("Too many attempts. access denied.")
